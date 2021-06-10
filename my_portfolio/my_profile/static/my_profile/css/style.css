@@ -110,7 +110,7 @@ fieldset {
 }
 
 .section-space-padding {
-    padding: 100px 0px;
+    padding: 150px 0px;
 }
 
 .section-title {
@@ -329,7 +329,8 @@ body.loaded #preloader{
 
 .home-section-background {
     position: relative;
-    height: 100%;
+    height: 630px;
+    width : 100%;
     background: url(../images/bg/bg.jpg);
     background-size: cover;
     z-index: 1;
