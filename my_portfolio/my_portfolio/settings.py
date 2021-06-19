@@ -132,7 +132,7 @@ STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'my_profile/static'),
+    os.path.join(BASE_DIR, 'static'),
 )
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
