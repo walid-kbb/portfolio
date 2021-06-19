@@ -14,6 +14,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import django_heroku
+import mimetypes
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 print(BASE_DIR)
@@ -25,7 +26,7 @@ print(BASE_DIR)
 SECRET_KEY = 'django-insecure-yr7w*+ig3#v&f%ysm5+c1=^^(!*q)$**!1u@oldvdmu%rnu@-y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -120,6 +121,10 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
+
+
+mimetypes.add_type("text/css", ".css", True)
+
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
