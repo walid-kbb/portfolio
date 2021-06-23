@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-yr7w*+ig3#v&f%ysm5+c1=^^(!*q)$**!1u@oldvdmu%rnu@-y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://walid-kebbab.herokuapp.com/']
 
 
 # Application definition
@@ -132,9 +132,8 @@ STATIC_URL = '/static/'
 
 
 # Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static')]
+
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 
