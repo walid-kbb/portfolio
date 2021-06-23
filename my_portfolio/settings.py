@@ -56,11 +56,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'my_portfolio.urls'
+SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(SETTINGS_PATH, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -132,7 +133,7 @@ STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'my_profile/static'),
+    os.path.join(BASE_DIR, 'static'),
 )
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
