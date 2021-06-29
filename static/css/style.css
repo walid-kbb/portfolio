@@ -327,7 +327,7 @@ body.loaded #preloader{
 
 .home-section-background {
     position: relative;
-    height: 630px;
+    height: 100%;
     width : 100%;
     background: url(../images/bg/bg.jpg);
     background-size: cover;
@@ -485,18 +485,19 @@ body.loaded #preloader{
 	background-color: #F9F9F9;
 }
 
-.about-section img {
-	position: absolute;
+.about-section .row {
+
+    padding-top : 130px;
 }
 
 .about-me {}
 
 .about-me h2 {
-	padding: 0px 50px;
+	padding-top:  80px;
 }
 
 .about-me p {
-	padding: 50px;
+	padding-top: 50px;
 	font-size: 15px;
 }
 
