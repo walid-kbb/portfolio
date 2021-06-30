@@ -110,7 +110,7 @@
 		
         $(window).load(function(){
         $(".typing").typed({
-            strings: ["Bienvenue !","Je m'appelle Walid KEBBAB", "Et je suis Développeur Full Stack."],    /* You can change the home section typing text from
+            strings: ["Bienvenue !","Je m'appelle Walid KEBBAB", " je suis Développeur Full Stack."],    /* You can change the home section typing text from
 	                                                                                            here and do not use "&" use "and" */
             typeSpeed: 50
           });
